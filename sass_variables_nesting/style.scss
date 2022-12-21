@@ -1,0 +1,40 @@
+section{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    text-align: center;
+}
+
+$color-primary: red; 
+$color-secondary: blue; 
+$color-tertiary: green;
+
+div{    
+    border: 1px solid $color-primary;
+    padding: 15px;
+        h1{ 
+            display: flex;
+            justify-content: center;
+            text-decoration: underline;
+            text-underline-offset: 8px; 
+
+            color: $color-tertiary;
+            text-decoration-color: $color-secondary;
+        }  
+        
+        article{
+            padding: 15px;
+            border: 1px solid $color-tertiary;
+            
+            p.pair-one{
+                color: $color-secondary;
+            }  
+            p.pair-two{
+                color: $color-primary;
+            }
+        }         
+}
+
+

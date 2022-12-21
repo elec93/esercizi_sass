@@ -1,0 +1,33 @@
+section {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  text-align: center;
+}
+
+div {
+  border: 1px solid red;
+  padding: 15px;
+}
+div h1 {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  color: green;
+  text-decoration-color: blue;
+}
+div article {
+  padding: 15px;
+  border: 1px solid green;
+}
+div article p.pair-one {
+  color: blue;
+}
+div article p.pair-two {
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */
