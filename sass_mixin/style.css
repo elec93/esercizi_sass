@@ -1,0 +1,54 @@
+div {
+  border: 1px solid red;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+div h1 {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  color: green;
+  text-decoration-color: blue;
+}
+
+section:first-of-type {
+  display: flex;
+}
+
+article {
+  border: 1px solid;
+  padding: 15px;
+}
+
+p {
+  text-align: center;
+}
+
+.card > article {
+  color: green;
+  border-color: green;
+  font-size: 1rem;
+  border: 1px solid;
+  padding: 10px;
+}
+.card > article p.pair-one {
+  color: blue;
+  border-color: green;
+  font-size: 1rem;
+}
+.card > article p.pair-two {
+  color: red;
+  border-color: green;
+  font-size: 1rem;
+}
+
+.footer > article {
+  color: green;
+  border-color: blue;
+  font-size: 24px;
+}
+
+/*# sourceMappingURL=style.css.map */
