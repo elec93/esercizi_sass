@@ -1,0 +1,58 @@
+@use "modules/module.scss" as m;
+@use "modules/function.scss" as func;
+
+div{     
+    border: func.rem(1)solid m.$color-primary;
+
+    padding:func.rem(15);
+    display: flex;
+    flex-direction: column;
+    gap: func.rem(15);
+    
+        h1{
+            display: flex;
+            justify-content: center;
+            text-decoration: underline;
+            text-underline-offset: func.rem(8);
+
+            color: m.$color-tertiary;
+            text-decoration-color: m.$color-secondary;
+        }                
+}
+
+section:first-of-type{
+    display: flex;
+}
+
+article{
+    border: func.rem(1) solid;   
+    padding: func.rem(10);
+}
+
+p{
+    text-align: center;
+}
+
+@mixin article-prop($color: m.$color-tertiary,  $border-color: m.$color-tertiary, $font-size: m.$font-size ) {
+    color: $color; 
+    border-color: $border-color;
+    font-size: $font-size;
+}
+
+.card>article{
+    @include article-prop();
+    border: func.rem(1) solid;   
+    padding: func.rem(10);
+    p.pair-one{
+         @include article-prop(m.$color-secondary);
+    }
+    p.pair-two{
+        @include article-prop(m.$color-primary);
+   }
+}
+
+.footer>article{
+    @include article-prop(m.$color-tertiary, m.$color-secondary, func.rem(24));
+}
+
+
